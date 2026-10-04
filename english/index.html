@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>每日英语</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;background:#faf7f0;color:#2b2620;max-width:640px;margin:0 auto;padding:16px 16px 48px;line-height:1.7}
+h1{font-size:22px;text-align:center;margin:8px 0 4px}
+.sub{text-align:center;color:#8a7f6a;font-size:13px;margin-bottom:14px}
+.tabs{display:flex;gap:8px;margin-bottom:16px;position:sticky;top:0;background:#faf7f0;padding:8px 0;z-index:5}
+.tabs button{flex:1;border:1px solid #d8cdb4;background:#fff;border-radius:10px;padding:10px 0;font-size:15px;cursor:pointer;color:#5c5344}
+.tabs button.active{background:#2b2620;color:#fff;border-color:#2b2620}
+.tab{display:none}.tab.active{display:block}
+.tip{background:#fff;border:1px solid #eee3cd;border-radius:10px;padding:12px;margin-bottom:10px}
+.tip-en{font-size:16px;margin-bottom:6px}
+.tip-zh{font-size:14px;color:#5c5344}
+.read-title{font-size:18px;font-weight:700;margin-bottom:2px}
+.read-src{font-size:12px;color:#8a7f6a;margin-bottom:10px}
+.copybtn{border:1px solid #d8cdb4;background:#fff;border-radius:8px;padding:6px 14px;font-size:13px;margin-bottom:10px;cursor:pointer;color:#5c5344}
+.read-en{font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.9;background:#fff;border:1px solid #eee3cd;border-radius:10px;padding:14px;margin-bottom:12px}
+.read-en p{margin-bottom:10px}.read-en p:last-child{margin-bottom:0}
+.read-zh-label{font-size:14px;font-weight:700;margin:6px 0}
+.read-zh{font-size:15px;color:#3d372c;background:#fff;border:1px solid #eee3cd;border-radius:10px;padding:14px}
+.read-zh p{margin-bottom:10px}.read-zh p:last-child{margin-bottom:0}
+.sec{font-size:14px;font-weight:700;margin:10px 0 6px}
+details{background:#fff;border:1px solid #eee3cd;border-radius:10px;padding:10px 12px;margin-bottom:10px}
+summary{cursor:pointer;font-size:15px;font-weight:600}
+</style>
+</head>
+<body>
+<h1>📖 每日英语</h1>
+<div class="sub">10月4日 · 每天早上 6 点更新</div>
+<div class="tabs">
+<button class="active" onclick="show('tips',this)">💡 每日Tips</button>
+<button onclick="show('read',this)">📜 今日一读</button>
+<button onclick="show('arch',this)">🗓 往期</button>
+</div>
+<div id="tips" class="tab active">
+<div class="sec">日常 small talk：和外国同事自然开场</div>
+<div class="tip"><div class="tip-en">1. <b>&ldquo;How was your weekend?&rdquo;</b></div><div class="tip-zh">周一早上最经典的开场白。= 你周末过得怎么样？对方一般简单说两句，你接一句 "That sounds nice!"（听起来不错！），对话就续上了。</div></div>
+<div class="tip"><div class="tip-en">2. <b>&ldquo;Did you do anything fun over the weekend?&rdquo;</b></div><div class="tip-zh">比上一句更具体、更好接话。= 周末干点啥好玩的了吗？哪怕对方只说 "Not much, just rested"（没干啥，就休息了），你回 "Sometimes that's the best kind of weekend."（有时候这就是最棒的周末。）就行。</div></div>
+<div class="tip"><div class="tip-en">3. <b>&ldquo;How's it going?&rdquo;</b></div><div class="tip-zh">比 "How are you?" 更随意、更常用。= 最近咋样？电梯里、茶水间偶遇时用，对方回 "Pretty good!" 就行，不用真的汇报近况。</div></div>
+<div class="tip"><div class="tip-en">4. <b>&ldquo;This coffee is a lifesaver this morning.&rdquo;</b></div><div class="tip-zh">lifesaver 本意是"救生员"，这里是夸张说法。= 今早这杯咖啡真是救了我。早上端着咖啡遇到同事，随口来一句，亲切感直接拉满。</div></div>
+<div class="tip"><div class="tip-en">5. <b>&ldquo;Looks like we're in for some rain later.&rdquo;</b></div><div class="tip-zh">聊天气的万能句，永远不会错。= 看样子晚点要下雨。不知道聊啥的时候，天气永远是安全话题。</div></div>
+<div class="tip"><div class="tip-en">6. <b>&ldquo;What have you been up to lately?&rdquo;</b></div><div class="tip-zh">= 最近在忙什么呢？比 "How are you?" 具体，适合有段时间没见的同事，对方会真的跟你分享两句近况。</div></div>
+<div class="tip"><div class="tip-en">7. <b>&ldquo;I could really use a coffee. How about you?&rdquo;</b></div><div class="tip-zh">= 我真得来杯咖啡，你呢？上午犯困时跟同事说，经常能顺势一起下楼买咖啡，关系就是这么处出来的。</div></div>
+<div class="tip"><div class="tip-en">8. <b>&ldquo;It's been one of those days.&rdquo;</b></div><div class="tip-zh">= 今天是那种"诸事不顺"的日子。连踩三个坑、加班到头秃的时候，跟同事相视一笑说这句，啥都懂了，不用多解释。</div></div>
+</div>
+<div id="read" class="tab">
+<div class="read-title">Elon Musk《Work Super Hard》</div><div class="read-src">2014年南加州大学毕业典礼演讲 · 真实连续原文</div><button class="copybtn" onclick="copyEn(this)">复制英文</button><div class="read-en"><p>The first thing is – you need to work. Depending upon how well you want to do, and particularly if you're starting a company, you need to work super hard. So what does super hard mean? Well, when my brother and I were starting our first company, instead of getting an apartment, we just rented a small office and we slept on the couch. We showered at the YMCA, and we were so hard up we had just one computer, so the website was up during the day and I was coding at night, seven days a week, all the time. I briefly had a girlfriend during that period and in order to be with me she had to sleep in the office. So work hard, like, every waking hour. That's the thing I would say – particularly if you're starting a company. If you do the simple math, say that someone else is working 50 hours and you're working 100, you'll get twice as much done in the course of the year as the other company.</p></div><div class="read-zh-label">中文翻译</div><div class="read-zh"><p>第一件事——你得干活。取决于你想做得多好，尤其是如果你想创业，你得超级拼命。什么叫超级拼命？当年我和我哥哥创办第一家公司时，我们没租公寓，只租了间小办公室，睡在沙发上，去 YMCA 洗澡。我们穷到只有一台电脑，所以网站白天运行，我晚上写代码，一周七天，全年无休。那段时间我短暂交过一个女朋友，她要跟我在一起，就得睡在办公室。所以，拼命干吧，就是醒着的每一个小时。这是我想说的，尤其是你想创业的话。算笔简单的账：如果别人一周工作 50 小时，你工作 100 小时，一年下来你能做的事情就是别人的两倍。</p></div>
+</div>
+<div id="arch" class="tab">
+<details><summary>10月4日 · 日常 small talk：和外国同事自然开场 / Elon Musk《Work Super Hard》</summary><div class="arch-tips"><div class="sec">💡 Tips</div><div class="tip"><div class="tip-en">1. <b>&ldquo;How was your weekend?&rdquo;</b></div><div class="tip-zh">周一早上最经典的开场白。= 你周末过得怎么样？对方一般简单说两句，你接一句 "That sounds nice!"（听起来不错！），对话就续上了。</div></div>
+<div class="tip"><div class="tip-en">2. <b>&ldquo;Did you do anything fun over the weekend?&rdquo;</b></div><div class="tip-zh">比上一句更具体、更好接话。= 周末干点啥好玩的了吗？哪怕对方只说 "Not much, just rested"（没干啥，就休息了），你回 "Sometimes that's the best kind of weekend."（有时候这就是最棒的周末。）就行。</div></div>
+<div class="tip"><div class="tip-en">3. <b>&ldquo;How's it going?&rdquo;</b></div><div class="tip-zh">比 "How are you?" 更随意、更常用。= 最近咋样？电梯里、茶水间偶遇时用，对方回 "Pretty good!" 就行，不用真的汇报近况。</div></div>
+<div class="tip"><div class="tip-en">4. <b>&ldquo;This coffee is a lifesaver this morning.&rdquo;</b></div><div class="tip-zh">lifesaver 本意是"救生员"，这里是夸张说法。= 今早这杯咖啡真是救了我。早上端着咖啡遇到同事，随口来一句，亲切感直接拉满。</div></div>
+<div class="tip"><div class="tip-en">5. <b>&ldquo;Looks like we're in for some rain later.&rdquo;</b></div><div class="tip-zh">聊天气的万能句，永远不会错。= 看样子晚点要下雨。不知道聊啥的时候，天气永远是安全话题。</div></div>
+<div class="tip"><div class="tip-en">6. <b>&ldquo;What have you been up to lately?&rdquo;</b></div><div class="tip-zh">= 最近在忙什么呢？比 "How are you?" 具体，适合有段时间没见的同事，对方会真的跟你分享两句近况。</div></div>
+<div class="tip"><div class="tip-en">7. <b>&ldquo;I could really use a coffee. How about you?&rdquo;</b></div><div class="tip-zh">= 我真得来杯咖啡，你呢？上午犯困时跟同事说，经常能顺势一起下楼买咖啡，关系就是这么处出来的。</div></div>
+<div class="tip"><div class="tip-en">8. <b>&ldquo;It's been one of those days.&rdquo;</b></div><div class="tip-zh">= 今天是那种"诸事不顺"的日子。连踩三个坑、加班到头秃的时候，跟同事相视一笑说这句，啥都懂了，不用多解释。</div></div></div><div class="arch-read"><div class="sec">📜 一读</div><div class="read-title">Elon Musk《Work Super Hard》</div><div class="read-src">2014年南加州大学毕业典礼演讲 · 真实连续原文</div><button class="copybtn" onclick="copyEn(this)">复制英文</button><div class="read-en"><p>The first thing is – you need to work. Depending upon how well you want to do, and particularly if you're starting a company, you need to work super hard. So what does super hard mean? Well, when my brother and I were starting our first company, instead of getting an apartment, we just rented a small office and we slept on the couch. We showered at the YMCA, and we were so hard up we had just one computer, so the website was up during the day and I was coding at night, seven days a week, all the time. I briefly had a girlfriend during that period and in order to be with me she had to sleep in the office. So work hard, like, every waking hour. That's the thing I would say – particularly if you're starting a company. If you do the simple math, say that someone else is working 50 hours and you're working 100, you'll get twice as much done in the course of the year as the other company.</p></div><div class="read-zh-label">中文翻译</div><div class="read-zh"><p>第一件事——你得干活。取决于你想做得多好，尤其是如果你想创业，你得超级拼命。什么叫超级拼命？当年我和我哥哥创办第一家公司时，我们没租公寓，只租了间小办公室，睡在沙发上，去 YMCA 洗澡。我们穷到只有一台电脑，所以网站白天运行，我晚上写代码，一周七天，全年无休。那段时间我短暂交过一个女朋友，她要跟我在一起，就得睡在办公室。所以，拼命干吧，就是醒着的每一个小时。这是我想说的，尤其是你想创业的话。算笔简单的账：如果别人一周工作 50 小时，你工作 100 小时，一年下来你能做的事情就是别人的两倍。</p></div></div></details>
+<details><summary>10月3日 · 开会和邮件里最高频的7句话 / Steve Jobs：Stay Hungry, Stay Foolish</summary><div class="arch-tips"><div class="sec">💡 Tips</div><div class="tip"><div class="tip-en">1. <b>&ldquo;Let's take this offline.&rdquo;</b></div><div class="tip-zh">开会时有人开始跑题、纠结细节，外国同事会笑着甩出这句。意思是：这个咱们会下单独聊。潜台词：别在会上浪费大家时间。</div></div>
+<div class="tip"><div class="tip-en">2. <b>&ldquo;Just circling back on this...&rdquo;</b></div><div class="tip-zh">邮件里最常见的"催一下"，一般放在开头。直译是"绕回来看看"，实际意思是：之前那事怎么样了？礼貌、自然，一点不尴尬。</div></div>
+<div class="tip"><div class="tip-en">3. <b>&ldquo;Does that make sense?&rdquo;</b></div><div class="tip-zh">讲完方案、布置完任务后最常问的一句。= 我说明白了吗？大家跟上了吗？比 "Do you understand?"（你听懂了吗？）客气得多，后者有点像在质问。</div></div>
+<div class="tip"><div class="tip-en">4. <b>&ldquo;Thanks for flagging!&rdquo;</b></div><div class="tip-zh">有人好心提醒你一件事，回这句准没错。= 谢谢提醒！职场万能回复，显得你靠谱又好相处。</div></div>
+<div class="tip"><div class="tip-en">5. <b>&ldquo;Let's park that for now.&rdquo;</b></div><div class="tip-zh">park 本来是停车，这里是"先搁置一下"。讨论卡住、时间不够时用：这个咱们先放一放，回头再说。比 "stop talking about it" 体面多了。</div></div>
+<div class="tip"><div class="tip-en">6. <b>&ldquo;How's your morning going?&rdquo;</b></div><div class="tip-zh">比 "How are you?" 更常用的开场白。周一早上、接电话、视频会议刚接通时都能用，对方一般回 "Pretty good, you?"，对话就打开了。</div></div>
+<div class="tip"><div class="tip-en">7. <b>&ldquo;Any fun plans for the weekend?&rdquo;</b></div><div class="tip-zh">周五下午的固定节目。外国人问是真心想听答案，下周一还可以接着问 "How was your weekend?"——关系就是这么一句一句聊出来的。</div></div></div><div class="arch-read"><div class="sec">📜 一读</div><div class="read-title">Steve Jobs：Stay Hungry, Stay Foolish</div><div class="read-src">2005年斯坦福大学毕业典礼演讲 · 真实连续原文</div><button class="copybtn" onclick="copyEn(this)">复制英文</button><div class="read-en"><p>Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma — which is living with the results of other people's thinking. Don't let the noise of others' opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary.</p><p>When I was young, there was an amazing publication called The Whole Earth Catalog, which was one of the bibles of my generation. It was created by a fellow named Stewart Brand not far from here in Menlo Park, and he brought it to life with his poetic touch. This was in the late 1960s, before personal computers and desktop publishing, so it was all made with typewriters, scissors and Polaroid cameras. It was sort of like Google in paperback form, 35 years before Google came along: it was idealistic, and overflowing with neat tools and great notions.</p><p>Stewart and his team put out several issues of The Whole Earth Catalog, and then when it had run its course, they put out a final issue. It was the mid-1970s, and I was your age. On the back cover of their final issue was a photograph of an early morning country road, the kind you might find yourself hitchhiking on if you were so adventurous. Beneath it were the words: "Stay Hungry. Stay Foolish." It was their farewell message as they signed off. Stay Hungry. Stay Foolish. And I have always wished that for myself. And now, as you graduate to begin anew, I wish that for you.</p><p>Stay Hungry. Stay Foolish.</p></div><div class="read-zh-label">中文翻译</div><div class="read-zh"><p>你的时间有限，不要浪费在过别人的生活上。不要被教条束缚——那意味着活在别人思考的结果里。不要让别人意见的噪音淹没了你内心的声音。最重要的是，要有勇气追随你的内心和直觉，它们早就知道你真正想成为什么。其他一切都是次要的。</p><p>我年轻的时候，有一本非常棒的刊物叫《Whole Earth Catalog》（地球目录），是我们那一代人的圣经之一。它是一位名叫 Stewart Brand 的老兄创办的，就在离这里不远的门洛帕克，他用诗意的笔触赋予了它生命。那是上世纪六十年代末，还没有个人电脑和桌面排版，所以整本杂志都是用打字机、剪刀和拍立得做出来的。它有点像纸质版的谷歌，只不过早了三十五年：充满理想主义，满是精巧的工具和绝妙的点子。</p><p>Stewart 和他的团队出了好几期《地球目录》，后来在它完成使命之后，又出了最后一期。那是七十年代中期，我和你们现在差不多大。在最后一期的封底，是一张清晨乡间小路的照片，那种如果你够爱冒险、可能会去搭便车的小路。照片下面写着："Stay Hungry. Stay Foolish."（求知若饥，虚心若愚。）那是他们告别时的赠言。求知若饥，虚心若愚。我一直以此自勉。现在，你们毕业了，开启新的人生，我把这句话送给你们。</p><p>求知若饥，虚心若愚。</p></div></div></details>
+</div>
+<script>
+function show(id,btn){document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');window.scrollTo(0,0);}
+function copyEn(btn){var t=btn.parentElement.querySelector('.read-en').innerText;navigator.clipboard.writeText(t).then(function(){var o=btn.textContent;btn.textContent='已复制 ✓';setTimeout(function(){btn.textContent=o;},1500);});}
+</script>
+</body>
+</html>
